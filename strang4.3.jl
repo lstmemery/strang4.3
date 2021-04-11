@@ -590,10 +590,17 @@ Less than that is needed. Any point that has linearly dependent components also 
 # ╔═╡ 6d4ba851-1705-4d00-9e2a-c0d0d0b9ab28
 md"""
 ## Q30
+
+``(A^TA) = \m{m & \\ & \sum{T_i^2}}``
+
+``(A^TA)^{-1} = \m{\frac{1}{m} & \\ & \frac{1}{\sum{T_i^2}}}``
+
+``A^T = \m{1 & ... & 1 \\ T_1 & ... & T_m}``
+
+``(A^TA)^-1A^T = \m{\frac{1}{m} & \\ & \frac{\sum{T_i}}{\sum{T_i^2}}}``
+
+``\m{C \\ D} = \hat{x}= (A^TA)^-1A^Tb = \m{\frac{\sum{b_i}}{m} & \\ & \frac{\sum{T_ib_i}}{\sum{T_i^2}}}``
 """
-
-# ╔═╡ 64fa29fb-9bb9-433e-bb17-97d7d11192cb
-
 
 # ╔═╡ Cell order:
 # ╠═e78b6b56-94f8-11eb-34d4-29df9006d3d5
@@ -699,4 +706,3 @@ md"""
 # ╠═76f62c73-5c3f-45b2-9de2-1c92c5df2d3e
 # ╠═57d67aad-141c-4ccb-9a45-a272fd8fa532
 # ╠═6d4ba851-1705-4d00-9e2a-c0d0d0b9ab28
-# ╠═64fa29fb-9bb9-433e-bb17-97d7d11192cb
